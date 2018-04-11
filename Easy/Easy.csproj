@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\Task_461_Hamming_Distance.cs" />
     <Compile Include="Tasks\Task_771_Jewels_and_Stones.cs" />
     <Compile Include="Tasks\Task_804_Unique_Morse_Code_Words.cs" />
   </ItemGroup>

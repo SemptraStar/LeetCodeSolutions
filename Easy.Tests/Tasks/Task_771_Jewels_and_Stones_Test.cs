@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LeetCodeProjects.Easy.Tasks;
+
 using NUnit.Framework;
 
-using LeetCodeProjects.Easy.Tasks;
-
-namespace LeetCodeProjects.Easy.Tests
+namespace LeetCodeProjects.Easy.Tests.Tasks
 {
     [TestFixture]
     public class Task_771_Jewels_and_Stones_Test
@@ -16,6 +11,7 @@ namespace LeetCodeProjects.Easy.Tests
         public void NumJewelsInStones_Test1()
         {
             var task = new Task_771_Jewels_and_Stones();
+
             string jewels = "aA";
             string stones = "aAAbbbb";
 
@@ -26,6 +22,7 @@ namespace LeetCodeProjects.Easy.Tests
         public void NumJewelsInStones_Test2()
         {
             var task = new Task_771_Jewels_and_Stones();
+
             string jewels = "z";
             string stones = "ZZZ";
 
