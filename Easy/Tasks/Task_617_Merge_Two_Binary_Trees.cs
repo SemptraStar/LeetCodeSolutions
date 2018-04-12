@@ -4,17 +4,12 @@
     {
         public TreeNode MergeTrees(TreeNode t1, TreeNode t2)
         {
-            if (t1 == null && t2 == null)
-            {
-                return null;
-            }
-
-            var node = new TreeNode(t1?.val + t2?.val ?? 0);
-
-            node.left = MergeTrees(t1?.left, t2?.left);
-            node.right = MergeTrees(t1?.right, t2?.right);
-
-            return node;
+            return t1 == null && t2 == null ? null : 
+                new TreeNode((t1?.val ?? 0) + (t2?.val ?? 0))
+                {
+                    left = MergeTrees(t1?.left, t2?.left),
+                    right = MergeTrees(t1?.right, t2?.right)
+                };
         }
 
         public class TreeNode
