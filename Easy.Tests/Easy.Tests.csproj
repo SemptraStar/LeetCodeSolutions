@@ -10,11 +10,12 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Easy.Tests</RootNamespace>
     <AssemblyName>Easy.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,6 +53,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tasks\Task_461_Hamming_Distance_Tests.cs" />
+    <Compile Include="Tasks\Task_617_Merge_Two_Binary_Trees_Tests.cs" />
+    <Compile Include="Tasks\Task_657_Judge_Route_Circle_Tests.cs" />
     <Compile Include="Tasks\Task_771_Jewels_and_Stones_Test.cs" />
     <Compile Include="Tasks\Task_804_Unique_Morse_Code_Words_Tests.cs" />
   </ItemGroup>
@@ -64,6 +67,9 @@
       <Project>{9d2d318b-47a3-4c6a-a150-eae0470587ee}</Project>
       <Name>Easy</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
